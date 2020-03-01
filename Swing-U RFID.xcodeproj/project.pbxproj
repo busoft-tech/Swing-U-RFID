@@ -9,25 +9,71 @@
 /* Begin PBXBuildFile section */
 		678835F9240A5BD800E3AD8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678835F8240A5BD800E3AD8B /* AppDelegate.swift */; };
 		678835FB240A5BD800E3AD8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678835FA240A5BD800E3AD8B /* SceneDelegate.swift */; };
-		678835FD240A5BD800E3AD8B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678835FC240A5BD800E3AD8B /* FirstViewController.swift */; };
-		678835FF240A5BD800E3AD8B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678835FE240A5BD800E3AD8B /* SecondViewController.swift */; };
 		67883602240A5BD800E3AD8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67883600240A5BD800E3AD8B /* Main.storyboard */; };
 		67883605240A5BD800E3AD8B /* Swing_U_RFID.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67883603240A5BD800E3AD8B /* Swing_U_RFID.xcdatamodeld */; };
 		67883607240A5BDD00E3AD8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67883606240A5BDD00E3AD8B /* Assets.xcassets */; };
 		6788360A240A5BDD00E3AD8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67883608240A5BDD00E3AD8B /* LaunchScreen.storyboard */; };
+		67883613240A5C3100E3AD8B /* ScannerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67883612240A5C3100E3AD8B /* ScannerListViewController.swift */; };
+		67883616240A5C4C00E3AD8B /* ItemInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67883615240A5C4C00E3AD8B /* ItemInventoryViewController.swift */; };
+		67883619240A5C5C00E3AD8B /* TagWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67883618240A5C5C00E3AD8B /* TagWriteViewController.swift */; };
+		6788361C240A5C7F00E3AD8B /* InventoryManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788361B240A5C7F00E3AD8B /* InventoryManagementViewController.swift */; };
+		6788361F240A5C9400E3AD8B /* TagListSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788361E240A5C9400E3AD8B /* TagListSearchViewController.swift */; };
+		67883622240A5CA900E3AD8B /* ScannerSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67883621240A5CA900E3AD8B /* ScannerSettingViewController.swift */; };
+		67883625240A5CBA00E3AD8B /* MemoryAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67883624240A5CBA00E3AD8B /* MemoryAccessViewController.swift */; };
+		67883627240A605800E3AD8B /* ScannerList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67883626240A605800E3AD8B /* ScannerList.storyboard */; };
+		67883629240A628D00E3AD8B /* ItemInventory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67883628240A628D00E3AD8B /* ItemInventory.storyboard */; };
+		6788362B240A62EE00E3AD8B /* TagWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6788362A240A62EE00E3AD8B /* TagWrite.storyboard */; };
+		6788362D240A639800E3AD8B /* InventoryManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6788362C240A639800E3AD8B /* InventoryManagement.storyboard */; };
+		6788362F240A63ED00E3AD8B /* TagListSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6788362E240A63ED00E3AD8B /* TagListSearch.storyboard */; };
+		67883631240A644C00E3AD8B /* ScannerSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67883630240A644C00E3AD8B /* ScannerSetting.storyboard */; };
+		67883633240A64BA00E3AD8B /* MemoryAccess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67883632240A64BA00E3AD8B /* MemoryAccess.storyboard */; };
+		67883638240A6AD400E3AD8B /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 67883636240A6AD400E3AD8B /* BLEDevice.m */; };
+		6788363B240A6AE600E3AD8B /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 67883639240A6AE600E3AD8B /* BLEUtility.m */; };
+		67883642240A6AFB00E3AD8B /* SwingApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6788363C240A6AFB00E3AD8B /* SwingApi.m */; };
+		67883643240A6AFB00E3AD8B /* SwingDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6788363F240A6AFB00E3AD8B /* SwingDevice.m */; };
+		67883644240A6AFB00E3AD8B /* SwingProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 67883641240A6AFB00E3AD8B /* SwingProtocol.m */; };
+		67883647240A6B0800E3AD8B /* DBInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 67883645240A6B0800E3AD8B /* DBInterface.m */; };
+		6788364A240A6B1200E3AD8B /* InventoryItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 67883649240A6B1200E3AD8B /* InventoryItems.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		678835F5240A5BD800E3AD8B /* Swing-U RFID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swing-U RFID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		678835F8240A5BD800E3AD8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		678835FA240A5BD800E3AD8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		678835FC240A5BD800E3AD8B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		678835FE240A5BD800E3AD8B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		67883601240A5BD800E3AD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67883604240A5BD800E3AD8B /* Swing_U_RFID.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swing_U_RFID.xcdatamodel; sourceTree = "<group>"; };
 		67883606240A5BDD00E3AD8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67883609240A5BDD00E3AD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6788360B240A5BDD00E3AD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67883612240A5C3100E3AD8B /* ScannerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerListViewController.swift; sourceTree = "<group>"; };
+		67883615240A5C4C00E3AD8B /* ItemInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInventoryViewController.swift; sourceTree = "<group>"; };
+		67883618240A5C5C00E3AD8B /* TagWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagWriteViewController.swift; sourceTree = "<group>"; };
+		6788361B240A5C7F00E3AD8B /* InventoryManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManagementViewController.swift; sourceTree = "<group>"; };
+		6788361E240A5C9400E3AD8B /* TagListSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListSearchViewController.swift; sourceTree = "<group>"; };
+		67883621240A5CA900E3AD8B /* ScannerSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerSettingViewController.swift; sourceTree = "<group>"; };
+		67883624240A5CBA00E3AD8B /* MemoryAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryAccessViewController.swift; sourceTree = "<group>"; };
+		67883626240A605800E3AD8B /* ScannerList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerList.storyboard; sourceTree = "<group>"; };
+		67883628240A628D00E3AD8B /* ItemInventory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemInventory.storyboard; sourceTree = "<group>"; };
+		6788362A240A62EE00E3AD8B /* TagWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TagWrite.storyboard; sourceTree = "<group>"; };
+		6788362C240A639800E3AD8B /* InventoryManagement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InventoryManagement.storyboard; sourceTree = "<group>"; };
+		6788362E240A63ED00E3AD8B /* TagListSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TagListSearch.storyboard; sourceTree = "<group>"; };
+		67883630240A644C00E3AD8B /* ScannerSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerSetting.storyboard; sourceTree = "<group>"; };
+		67883632240A64BA00E3AD8B /* MemoryAccess.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoryAccess.storyboard; sourceTree = "<group>"; };
+		67883635240A6AD300E3AD8B /* Swing-U RFID-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swing-U RFID-Bridging-Header.h"; sourceTree = "<group>"; };
+		67883636240A6AD400E3AD8B /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		67883637240A6AD400E3AD8B /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		67883639240A6AE600E3AD8B /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		6788363A240A6AE600E3AD8B /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		6788363C240A6AFB00E3AD8B /* SwingApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwingApi.m; sourceTree = "<group>"; };
+		6788363D240A6AFB00E3AD8B /* SwingApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwingApi.h; sourceTree = "<group>"; };
+		6788363E240A6AFB00E3AD8B /* SwingDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwingDevice.h; sourceTree = "<group>"; };
+		6788363F240A6AFB00E3AD8B /* SwingDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwingDevice.m; sourceTree = "<group>"; };
+		67883640240A6AFB00E3AD8B /* SwingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwingProtocol.h; sourceTree = "<group>"; };
+		67883641240A6AFB00E3AD8B /* SwingProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwingProtocol.m; sourceTree = "<group>"; };
+		67883645240A6B0800E3AD8B /* DBInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBInterface.m; sourceTree = "<group>"; };
+		67883646240A6B0800E3AD8B /* DBInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBInterface.h; sourceTree = "<group>"; };
+		67883648240A6B1100E3AD8B /* InventoryItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryItems.h; sourceTree = "<group>"; };
+		67883649240A6B1200E3AD8B /* InventoryItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryItems.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +106,16 @@
 		678835F7240A5BD800E3AD8B /* Swing-U RFID */ = {
 			isa = PBXGroup;
 			children = (
+				67883611240A5C1C00E3AD8B /* Scanner List */,
+				67883614240A5C3900E3AD8B /* Item Inventory */,
+				67883617240A5C5000E3AD8B /* Tag Write */,
+				6788361A240A5C5F00E3AD8B /* Inventory Management */,
+				6788361D240A5C8500E3AD8B /* Tag List Search */,
+				67883620240A5C9900E3AD8B /* Scanner Setting */,
+				67883623240A5CAE00E3AD8B /* Memory Access */,
+				67883634240A6ABB00E3AD8B /* Classes */,
 				678835F8240A5BD800E3AD8B /* AppDelegate.swift */,
 				678835FA240A5BD800E3AD8B /* SceneDelegate.swift */,
-				678835FC240A5BD800E3AD8B /* FirstViewController.swift */,
-				678835FE240A5BD800E3AD8B /* SecondViewController.swift */,
 				67883600240A5BD800E3AD8B /* Main.storyboard */,
 				67883606240A5BDD00E3AD8B /* Assets.xcassets */,
 				67883608240A5BDD00E3AD8B /* LaunchScreen.storyboard */,
@@ -71,6 +123,91 @@
 				67883603240A5BD800E3AD8B /* Swing_U_RFID.xcdatamodeld */,
 			);
 			path = "Swing-U RFID";
+			sourceTree = "<group>";
+		};
+		67883611240A5C1C00E3AD8B /* Scanner List */ = {
+			isa = PBXGroup;
+			children = (
+				67883612240A5C3100E3AD8B /* ScannerListViewController.swift */,
+				67883626240A605800E3AD8B /* ScannerList.storyboard */,
+			);
+			path = "Scanner List";
+			sourceTree = "<group>";
+		};
+		67883614240A5C3900E3AD8B /* Item Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				67883615240A5C4C00E3AD8B /* ItemInventoryViewController.swift */,
+				67883628240A628D00E3AD8B /* ItemInventory.storyboard */,
+			);
+			path = "Item Inventory";
+			sourceTree = "<group>";
+		};
+		67883617240A5C5000E3AD8B /* Tag Write */ = {
+			isa = PBXGroup;
+			children = (
+				67883618240A5C5C00E3AD8B /* TagWriteViewController.swift */,
+				6788362A240A62EE00E3AD8B /* TagWrite.storyboard */,
+			);
+			path = "Tag Write";
+			sourceTree = "<group>";
+		};
+		6788361A240A5C5F00E3AD8B /* Inventory Management */ = {
+			isa = PBXGroup;
+			children = (
+				6788361B240A5C7F00E3AD8B /* InventoryManagementViewController.swift */,
+				6788362C240A639800E3AD8B /* InventoryManagement.storyboard */,
+			);
+			path = "Inventory Management";
+			sourceTree = "<group>";
+		};
+		6788361D240A5C8500E3AD8B /* Tag List Search */ = {
+			isa = PBXGroup;
+			children = (
+				6788361E240A5C9400E3AD8B /* TagListSearchViewController.swift */,
+				6788362E240A63ED00E3AD8B /* TagListSearch.storyboard */,
+			);
+			path = "Tag List Search";
+			sourceTree = "<group>";
+		};
+		67883620240A5C9900E3AD8B /* Scanner Setting */ = {
+			isa = PBXGroup;
+			children = (
+				67883621240A5CA900E3AD8B /* ScannerSettingViewController.swift */,
+				67883630240A644C00E3AD8B /* ScannerSetting.storyboard */,
+			);
+			path = "Scanner Setting";
+			sourceTree = "<group>";
+		};
+		67883623240A5CAE00E3AD8B /* Memory Access */ = {
+			isa = PBXGroup;
+			children = (
+				67883624240A5CBA00E3AD8B /* MemoryAccessViewController.swift */,
+				67883632240A64BA00E3AD8B /* MemoryAccess.storyboard */,
+			);
+			path = "Memory Access";
+			sourceTree = "<group>";
+		};
+		67883634240A6ABB00E3AD8B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				67883637240A6AD400E3AD8B /* BLEDevice.h */,
+				67883636240A6AD400E3AD8B /* BLEDevice.m */,
+				6788363A240A6AE600E3AD8B /* BLEUtility.h */,
+				67883639240A6AE600E3AD8B /* BLEUtility.m */,
+				67883646240A6B0800E3AD8B /* DBInterface.h */,
+				67883645240A6B0800E3AD8B /* DBInterface.m */,
+				67883648240A6B1100E3AD8B /* InventoryItems.h */,
+				67883649240A6B1200E3AD8B /* InventoryItems.m */,
+				6788363D240A6AFB00E3AD8B /* SwingApi.h */,
+				6788363C240A6AFB00E3AD8B /* SwingApi.m */,
+				6788363E240A6AFB00E3AD8B /* SwingDevice.h */,
+				6788363F240A6AFB00E3AD8B /* SwingDevice.m */,
+				67883640240A6AFB00E3AD8B /* SwingProtocol.h */,
+				67883641240A6AFB00E3AD8B /* SwingProtocol.m */,
+				67883635240A6AD300E3AD8B /* Swing-U RFID-Bridging-Header.h */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +242,7 @@
 				TargetAttributes = {
 					678835F4240A5BD800E3AD8B = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -132,8 +270,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6788360A240A5BDD00E3AD8B /* LaunchScreen.storyboard in Resources */,
+				6788362B240A62EE00E3AD8B /* TagWrite.storyboard in Resources */,
+				67883629240A628D00E3AD8B /* ItemInventory.storyboard in Resources */,
 				67883607240A5BDD00E3AD8B /* Assets.xcassets in Resources */,
+				6788362D240A639800E3AD8B /* InventoryManagement.storyboard in Resources */,
+				67883631240A644C00E3AD8B /* ScannerSetting.storyboard in Resources */,
+				6788362F240A63ED00E3AD8B /* TagListSearch.storyboard in Resources */,
 				67883602240A5BD800E3AD8B /* Main.storyboard in Resources */,
+				67883627240A605800E3AD8B /* ScannerList.storyboard in Resources */,
+				67883633240A64BA00E3AD8B /* MemoryAccess.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,11 +289,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				678835FF240A5BD800E3AD8B /* SecondViewController.swift in Sources */,
-				678835FD240A5BD800E3AD8B /* FirstViewController.swift in Sources */,
+				6788361F240A5C9400E3AD8B /* TagListSearchViewController.swift in Sources */,
+				67883625240A5CBA00E3AD8B /* MemoryAccessViewController.swift in Sources */,
 				678835F9240A5BD800E3AD8B /* AppDelegate.swift in Sources */,
+				6788361C240A5C7F00E3AD8B /* InventoryManagementViewController.swift in Sources */,
+				67883616240A5C4C00E3AD8B /* ItemInventoryViewController.swift in Sources */,
+				67883638240A6AD400E3AD8B /* BLEDevice.m in Sources */,
+				6788363B240A6AE600E3AD8B /* BLEUtility.m in Sources */,
 				67883605240A5BD800E3AD8B /* Swing_U_RFID.xcdatamodeld in Sources */,
+				67883643240A6AFB00E3AD8B /* SwingDevice.m in Sources */,
+				67883644240A6AFB00E3AD8B /* SwingProtocol.m in Sources */,
+				6788364A240A6B1200E3AD8B /* InventoryItems.m in Sources */,
+				67883619240A5C5C00E3AD8B /* TagWriteViewController.swift in Sources */,
+				67883642240A6AFB00E3AD8B /* SwingApi.m in Sources */,
 				678835FB240A5BD800E3AD8B /* SceneDelegate.swift in Sources */,
+				67883613240A5C3100E3AD8B /* ScannerListViewController.swift in Sources */,
+				67883622240A5CA900E3AD8B /* ScannerSettingViewController.swift in Sources */,
+				67883647240A6B0800E3AD8B /* DBInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJ8T457226;
 				INFOPLIST_FILE = "Swing-U RFID/Info.plist";
@@ -301,6 +459,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tr.com.busoft.Swing-U-RFID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swing-U RFID/Classes/Swing-U RFID-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJ8T457226;
 				INFOPLIST_FILE = "Swing-U RFID/Info.plist";
@@ -319,6 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tr.com.busoft.Swing-U-RFID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swing-U RFID/Classes/Swing-U RFID-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

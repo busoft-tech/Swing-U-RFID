@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  TagListSearchViewController.swift
 //  Swing-U RFID
 //
 //  Created by Hamza Öztürk on 29.02.2020.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class TagListSearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
